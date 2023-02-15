@@ -1,38 +1,336 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
+
+body{
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  background-color: aquamarine;
+}
+html{
+  scroll-behavior: smooth;
+}
+.body1
+{
+  scroll-behavior: smooth;
+}
+.new
+{
+  background-color: rgb(58, 57, 56);
+  width: 100vw;
+  height: 100vh;
+}
+#headd
+{
+  color: #657725;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  left : 2vw;
+  z-index: 2;
+}
+.headertags
+{
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* border-style: solid; */
+  align-items: center;
+  justify-content: right;
+  column-gap: 5vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 4vh;
+  z-index: 10;
+}
+#header1
+{
+  color: #C79552;
+  position: relative;
+  right: 3vw;
+}
+.header2
+{
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+.header2
+{
+  position: relative;
+  top: 40vh;
+}
+#fname
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(21, 244, 238);
+}
+#dname
+{
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+  top: 5vh;
+  font-size: 30px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  color: #f8ffec;
+}
+.new1
+{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+#about-header
+{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 3vw;
+}
+.new2
+{
+  background-color: #12181F;
+}
+#projectheader
+{
+  color: grey;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  position: relative;
+  top: 5vh;
+}
+.projectsection
+{
+  position: relative;
+  top: 5vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+/* @media (max-width: 1000px) {
+  .projectsection
+  {
+    grid-template-columns: auto auto;
+  }
+} */
+@media (max-width: 1000px) {
+  .projectsection
+  {
+    grid-template-columns: auto auto;
+  }
+}
+
+#project1
+{
+  color: #12181F;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #C79552;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+h2{
+  color: pink;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+#project2
+{
+  color: #12181F;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #C79552;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+} 
+#project3
+{
+  color: #12181F;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #C79552;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#project4{
+  color: #12181F;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #C79552;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#project5{
+  color: #12181F;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #C79552;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#project6
+{
+  color: #12181F;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #C79552;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.projectdet1
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+}
+
+@media (max-width:1000px){
+  .projectdet1
+  {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+  }
+  .projectdetimgs
+  {
+    width: auto;
+  }
+  .projectdetdes
+  {
+    width: 900px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10vw 0;
+    background-color: #C79552;
+  }
+}
+
+#img1
+{
+  background-color: red;
+  width: 200px;
+}
+p{
+  color: rgb(154, 89, 89);
+  font-size: 1vw;
+}
+.projectdetdes
+{
+  width: 400px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10vw 0;
+  background-color: #C79552;
+}
+.projectdetimgs
+{
+  width: 900px;
+}
+
+/* image resize accoording to window width and height*/
+img
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+#dummy
+{
+  padding: 8vw;
+}
+#cont
+{
+  background-color: #4e809d;
+  height: 100vh;
+}
+#cont-header
+{
+  position: relative;
+  top: 5vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+#linkedinlogo, #maillogo, #gitlogo
+{
+  width: 100px;
+  position: relative;
+  left: 20vw;
+}
+.logos
+{
+  position: relative;
+  top: 20vh;
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto auto;
+  row-gap: 15vh;
+}
+
+#footer
+{
+  background-color: grey;
+  padding: 1vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#contact-form-out
+{
+  display: grid;
+  justify-content: right;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-form
+{
+  padding: 2vw;
+  position: relative;
+  bottom: 23vh;
+  right: 20vw;
+  display: grid;
+  grid-template-rows: auto;
+  width: 300px;
+  row-gap: 10px;
+  border-style: solid;
 }
